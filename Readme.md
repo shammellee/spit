@@ -1,5 +1,5 @@
 # spit
-store and retrieve paths/strings from the command line
+store and retrieve paths/commands/strings from the command line
 
 # todo
 * get path count `spit --length,#`
