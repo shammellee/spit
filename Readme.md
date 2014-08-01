@@ -13,7 +13,9 @@ store and retrieve paths/strings from the command line
 
 # .spitfile
 * single path per line
-	~/Desktop
-	/etc/hosts
-	/Volumes/Storage/media/p
-	somelongcommand --with-a-lot of --complex flags
+```
+~/Desktop
+/etc/hosts
+/Volumes/Storage/media/p
+somelongcommand --with-a-lot of --complex flags
+```
