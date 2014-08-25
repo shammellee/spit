@@ -1,21 +1,21 @@
 # spit
 store and retrieve paths/commands/strings from the command line
 
-# todo
-* get path count `spit --length,#`
-* list paths `spit [--list]`
-* add strings `spit +<key>:<string> ...`
-* remove strings by key `spit [--delete <key> ...,-<key> ...]`
-* get string by key `spit <key>`
-* clear strings `spit x`
-* specify spitfile `spit --spitfile,-f <file>`
-* help `spit --help,-h`
+# dependencies
+* [Boost libraries][boost]
 
-# .spitfile
-* single path per line
-```
-~/Desktop
-/etc/hosts
-/Volumes/Storage/media/p
-somelongcommand --with-a-lot of --complex flags
-```
+# building spit
+* set `BOOST_ROOT` environment variable
+
+# todo
+* add entries `spit -a <key>:<string> ...`
+* get path count `spit --length,#`
+* list paths `spit [--list,ls]`
+* remove entries by key `spit -d <key> ...`
+* get entries by key `spit <key>`
+* clear entries `spit -c`
+* specify spitfile `spit --spitfile,-f <file>`
+* silent `spit --silent,-s
+* verbose `spit --verbose,-v`
+
+[boost]: http://www.boost.org/
