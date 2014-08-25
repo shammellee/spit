@@ -5,7 +5,8 @@ store and retrieve paths/commands/strings from the command line
 * [Boost libraries][boost]
 
 # building spit
-* set `BOOST_ROOT` environment variable
+* `$ export BOOST_ROOT=<boostPath>`
+* `$ make`
 
 # todo
 * add entries `spit -a <key>:<string> ...`
