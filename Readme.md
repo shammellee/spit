@@ -2,7 +2,8 @@
 store and retrieve paths/commands/strings from the command line
 
 # dependencies
-* [Boost libraries][boost]
+* Compiler with C++11 support
+* [Boost libraries][boost] with C++11 support
 
 # building spit
 * `$ export BOOST_ROOT=<boostPath>`
