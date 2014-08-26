@@ -133,3 +133,13 @@ void load_entries()
 {
 	
 }
+
+void list_entries()
+{
+	
+}
+
+void add_entry()
+{
+	
+}
