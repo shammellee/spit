@@ -6,6 +6,7 @@
 #include <sstream>
 #include <boost/filesystem.hpp>
 #include <boost/program_options.hpp>
+#include "color_codes.hpp"
 
 #define SPITFILE "Spitfile"
 #define ENTRY_PARTS 2
@@ -22,7 +23,7 @@ int main(int argc, char const *argv[])
 	map<string,string> entries;
 	regex entry(R"(^([_a-z0-9.]+)\s+(.+)$)",regex_constants::icase);
 
-	po::options_description clOptions("Allowed Options");
+	po::options_description clOptions("Options");
 	clOptions.add_options()
 		("help,h","Show help")
 		("initialize,i","Initialize")
@@ -30,6 +31,7 @@ int main(int argc, char const *argv[])
 		("list,l","List entries")
 		("keys,k","List keys only")
 		("values,v","List values only")
+		("verbose,V","Verbose output")
 	;
 
 	po::variables_map varMap;
@@ -97,7 +99,8 @@ int main(int argc, char const *argv[])
 								cout << strMatch[2] << endl;
 							}else
 							{
-								cout << strMatch[1] << " => " << strMatch[2] << endl;
+								cout << COLOR_RED << strMatch[1];
+								cout << COLOR_NORMAL << " " << strMatch[2] << endl;
 							}
 						}else
 						{
